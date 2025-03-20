@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\chris\\desktop\\backenda\u0026e\\backendae\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|Models{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|C:\\Users\\chris\\Desktop\\Backenda\u0026E\\BackendAE\\Venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|Models{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|solutionrelative:Venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|Models{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|C:\\Users\\chris\\Desktop\\Backenda\u0026E\\BackendAE\\Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|Models{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}|solutionrelative:Usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAA/wDQAAABgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T22:54:31.53Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\Usuario.cs",
+              "RelativeDocumentMoniker": "Usuario.cs",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\Usuario.cs",
+              "RelativeToolTip": "Usuario.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAADwvzcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T21:35:48.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\Venta.cs",
+              "RelativeDocumentMoniker": "Venta.cs",
+              "ToolTip": "C:\\Users\\chris\\Desktop\\BackendA\u0026E\\BackendAE\\Venta.cs",
+              "RelativeToolTip": "Venta.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-18T21:41:36.221Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

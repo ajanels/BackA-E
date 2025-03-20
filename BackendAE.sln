@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35431.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BackendAE", "BackendAE.csproj", "{010AE46D-4B84-42B8-8863-A648C436E07B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{7779CA06-3843-448C-98E5-9480B295582C}"
+	ProjectSection(SolutionItems) = preProject
+		ApplicationDbContext.cs = ApplicationDbContext.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{7786BA6E-0FDB-4CA2-8D81-A266B2C374BF}"
+	ProjectSection(SolutionItems) = preProject
+		CategoriaProducto.cs = CategoriaProducto.cs
+		DetalleFactura.cs = DetalleFactura.cs
+		DetalleVenta.cs = DetalleVenta.cs
+		Factura.cs = Factura.cs
+		Producto.cs = Producto.cs
+		Proveedor.cs = Proveedor.cs
+		ProveedorProducto.cs = ProveedorProducto.cs
+		Rol.cs = Rol.cs
+		Usuario.cs = Usuario.cs
+		Venta.cs = Venta.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1DE730F7-BFED-477B-B5EF-B6E91FBA813E}"
+	ProjectSection(SolutionItems) = preProject
+		EmailService.cs = EmailService.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{010AE46D-4B84-42B8-8863-A648C436E07B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{010AE46D-4B84-42B8-8863-A648C436E07B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{010AE46D-4B84-42B8-8863-A648C436E07B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{010AE46D-4B84-42B8-8863-A648C436E07B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75B775F5-351E-4B00-AB09-C8EC086D59BE}
+	EndGlobalSection
+EndGlobal
