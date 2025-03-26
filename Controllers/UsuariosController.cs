@@ -62,7 +62,7 @@ namespace BackendAE.Controllers
 
             // Enviar correo con credenciales
             string subject = "Credenciales de acceso";
-            string body = $"Hola {usuario.UsuPNombre},<br><br>Tu usuario es: {usuario.UsuId}<br>Tu contraseña es: {usuario.UsuContraseña}<br><br>Saludos.";
+            string body = $"Hola {usuario.UsuPNombre},<br><br>Tu usuario es: {usuario.UsuId}<br>Tu contraseña es: {usuario.UsuContrasena}<br><br>Saludos.";
 
             await _emailService.SendEmailAsync(usuario.UsuEmail, subject, body);
 

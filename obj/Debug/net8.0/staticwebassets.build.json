@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "RzGMfB92P6tDcDTu/s+qARBJNDq55JAQFDTHhbZkODg=",
+  "Hash": "XcM4Ty+7x3r3QvIPHUU8yYNN4k3Cjvd+nZzAYOqhgd4=",
   "Source": "BackendAE",
   "BasePath": "_content/BackendAE",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

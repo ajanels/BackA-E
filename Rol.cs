@@ -7,7 +7,7 @@ namespace BackendAE.Models
         //[Key]
         public int RolId { get; set; }
 
-        [Required]
+        //[Required]
         [MaxLength(100)]
         public string RolNombre { get; set; }
 

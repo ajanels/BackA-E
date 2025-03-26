@@ -34,7 +34,7 @@ namespace BackendAE.Controllers
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(u => u.UsuId == userRequest.UsuId);
 
-            if (usuario == null || usuario.UsuContraseña != userRequest.UsuContraseña)
+            if (usuario == null || usuario.UsuContrasena != userRequest.UsuContraseña)
             {
                 return Unauthorized(new { message = "Credenciales inválidas" });
             }

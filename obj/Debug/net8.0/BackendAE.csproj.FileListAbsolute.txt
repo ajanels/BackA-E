@@ -178,3 +178,8 @@ C:\Users\chris\Desktop\Backenda&E\BackendAE\bin\Debug\net8.0\MailKit.dll
 C:\Users\chris\Desktop\Backenda&E\BackendAE\bin\Debug\net8.0\MimeKit.dll
 C:\Users\chris\Desktop\Backenda&E\BackendAE\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\chris\Desktop\Backenda&E\BackendAE\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\chris\Desktop\Backenda&E\BackendAE\obj\Debug\net8.0\BackendAE.sourcelink.json
+C:\Users\chris\Desktop\Backenda&E\BackendAE\bin\Debug\net8.0\BackendAE.staticwebassets.endpoints.json
+C:\Users\chris\Desktop\Backenda&E\BackendAE\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\chris\Desktop\Backenda&E\BackendAE\obj\Debug\net8.0\staticwebassets\msbuild.BackendAE.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\chris\Desktop\Backenda&E\BackendAE\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
