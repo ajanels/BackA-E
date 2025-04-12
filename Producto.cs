@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BackendAE.Models
@@ -27,5 +28,12 @@ namespace BackendAE.Models
 
         [ForeignKey("CatProductoId")]
         public virtual CategoriaProducto? CategoriaProducto { get; set; }
+
+        // Elimina el atributo [MaxLength] para que no haya límite en el modelo
+        public string? ProductoImg { get; set; }
+
+        [Column(TypeName = "decimal(10, 2)")]
+        public decimal ProductoPrecio { get; set; }
+
     }
 }

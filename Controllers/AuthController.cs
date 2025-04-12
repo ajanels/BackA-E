@@ -6,6 +6,7 @@ using System.Text;
 using BackendAE.Data;
 using BackendAE.Models;
 using Microsoft.EntityFrameworkCore;
+using BCrypt.Net;
 
 namespace BackendAE.Controllers
 {
@@ -28,13 +29,28 @@ namespace BackendAE.Controllers
             public string UsuContraseña { get; set; }
         }
 
+        //[HttpPost("login")]
+        //public async Task<IActionResult> Login([FromBody] LoginRequest userRequest)
+        //{
+        //    var usuario = await _context.Usuarios
+        //        .FirstOrDefaultAsync(u => u.UsuId == userRequest.UsuId);
+
+        //    if (usuario == null || usuario.UsuContrasena != userRequest.UsuContraseña)
+        //    {
+        //        return Unauthorized(new { message = "Credenciales inválidas" });
+        //    }
+
+        //    string token = GenerateJwtToken(usuario);
+        //    return Ok(new { token });
+        //}
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest userRequest)
         {
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(u => u.UsuId == userRequest.UsuId);
 
-            if (usuario == null || usuario.UsuContrasena != userRequest.UsuContraseña)
+            // Verificación usando bcrypt
+            if (usuario == null || !BCrypt.Net.BCrypt.Verify(userRequest.UsuContraseña, usuario.UsuContrasena))
             {
                 return Unauthorized(new { message = "Credenciales inválidas" });
             }

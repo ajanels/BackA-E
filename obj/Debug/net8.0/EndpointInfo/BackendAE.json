@@ -81,17 +81,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProducto"
+                "$ref": "#/components/schemas/CategoriaProductoDto"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProducto"
+                "$ref": "#/components/schemas/CategoriaProductoDto"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CategoriaProducto"
+                "$ref": "#/components/schemas/CategoriaProductoDto"
               }
             }
           }
@@ -1568,6 +1568,20 @@
         },
         "additionalProperties": false
       },
+      "CategoriaProductoDto": {
+        "type": "object",
+        "properties": {
+          "catProductoNombre": {
+            "type": "string",
+            "nullable": true
+          },
+          "catProductoDescripcion": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DetalleFactura": {
         "type": "object",
         "properties": {
@@ -1725,6 +1739,14 @@
           },
           "categoriaProducto": {
             "$ref": "#/components/schemas/CategoriaProducto"
+          },
+          "productoImg": {
+            "type": "string",
+            "nullable": true
+          },
+          "productoPrecio": {
+            "type": "number",
+            "format": "double"
           }
         },
         "additionalProperties": false
@@ -1838,7 +1860,7 @@
             "type": "string"
           },
           "usuNit": {
-            "maxLength": 10,
+            "maxLength": 9,
             "type": "string",
             "nullable": true
           },
@@ -1913,6 +1935,19 @@
           "usuId": {
             "minLength": 1,
             "type": "string"
+          },
+          "productoCantidad": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "productoId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "producto": {
+            "$ref": "#/components/schemas/Producto"
           }
         },
         "additionalProperties": false
