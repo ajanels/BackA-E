@@ -4,6 +4,7 @@ using BackendAE.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using BackendAE.Dtos;
 
 namespace BackendAE.Controllers
 {
@@ -33,12 +34,21 @@ namespace BackendAE.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<CategoriaProducto>> PostCategoria(CategoriaProducto categoria)
+        public async Task<ActionResult<CategoriaProducto>> PostCategoria(CategoriaProductoDto dto)
         {
+            var categoria = new CategoriaProducto
+            {
+                CatProductoNombre = dto.CatProductoNombre,
+                CatProductoDescripcion = dto.CatProductoDescripcion
+            };
+
             _context.CategoriaProductos.Add(categoria);
             await _context.SaveChangesAsync();
+
             return CreatedAtAction(nameof(GetCategoria), new { id = categoria.CatProductoId }, categoria);
         }
+
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategoria(int id, CategoriaProducto categoria)

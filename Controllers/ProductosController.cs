@@ -20,14 +20,23 @@ namespace BackendAE.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
         {
-            return await _context.Productos.ToListAsync();
+            return await _context.Productos
+                .Include(p => p.CategoriaProducto) // Carga ansiosamente la relación CategoriaProducto
+                .ToListAsync();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
-            var producto = await _context.Productos.FindAsync(id);
-            if (producto == null) return NotFound();
+            var producto = await _context.Productos
+                .Include(p => p.CategoriaProducto) // Carga ansiosamente la relación CategoriaProducto
+                .FirstOrDefaultAsync(p => p.ProductoId == id);
+
+            if (producto == null)
+            {
+                return NotFound();
+            }
+
             return producto;
         }
 

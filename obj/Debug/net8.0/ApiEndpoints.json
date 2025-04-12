@@ -44,8 +44,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "categoria",
-        "Type": "BackendAE.Models.CategoriaProducto",
+        "Name": "dto",
+        "Type": "BackendAE.Dtos.CategoriaProductoDto",
         "IsRequired": true
       }
     ],
