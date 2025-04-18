@@ -16,12 +16,12 @@ namespace BackendAE.Models
 
         public int FacturaId { get; set; }
 
-       // [ForeignKey("FacturaId")]
-       // public virtual Factura Factura { get; set; }
+        // [ForeignKey("FacturaId")]
+        // public virtual Factura Factura { get; set; }
 
         public int ProductoId { get; set; }
 
         //[ForeignKey("ProductoId")]
-       // public virtual Producto Producto { get; set; }
+        // public virtual Producto Producto { get; set; }
     }
 }

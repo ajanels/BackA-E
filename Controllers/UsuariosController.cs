@@ -4,6 +4,7 @@ using BackendAE.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
+using BCrypt.Net;
 
 namespace BackendAE.Controllers
 {
@@ -40,29 +41,60 @@ namespace BackendAE.Controllers
         }
 
         // Crear un nuevo usuario y enviar credenciales por correo
+        //[HttpPost]
+        //public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
+        //{
+
+        //    if (string.IsNullOrEmpty(usuario.UsuEmail))
+        //    {
+        //        return BadRequest(new { message = "El correo electrónico es obligatorio." });
+        //    }
+
+        //    // Verificar si el usuario ya existe
+        //    var existeUsuario = await _context.Usuarios.AnyAsync(u => u.UsuId == usuario.UsuId);
+        //    if (existeUsuario)
+        //    {
+        //        return BadRequest(new { message = "El usuario ya existe en la base de datos." });
+        //    }
+
+
+        //    _context.Usuarios.Add(usuario);
+        //    await _context.SaveChangesAsync();
+
+        //    // Enviar correo con credenciales
+        //    string subject = "Credenciales de acceso";
+        //    string body = $"Hola {usuario.UsuPNombre},<br><br>Tu usuario es: {usuario.UsuId}<br>Tu contraseña es: {usuario.UsuContrasena}<br><br>Saludos.";
+
+        //    await _emailService.SendEmailAsync(usuario.UsuEmail, subject, body);
+
+        //    return CreatedAtAction(nameof(GetUsuario), new { id = usuario.UsuId }, usuario);
+        //}
         [HttpPost]
         public async Task<ActionResult<Usuario>> PostUsuario(Usuario usuario)
         {
-
             if (string.IsNullOrEmpty(usuario.UsuEmail))
             {
                 return BadRequest(new { message = "El correo electrónico es obligatorio." });
             }
 
-            // Verificar si el usuario ya existe
             var existeUsuario = await _context.Usuarios.AnyAsync(u => u.UsuId == usuario.UsuId);
             if (existeUsuario)
             {
                 return BadRequest(new { message = "El usuario ya existe en la base de datos." });
             }
 
+            // Guardamos la contraseña en texto plano antes de cifrarla para enviarla por correo
+            var contraseñaOriginal = usuario.UsuContrasena;
+
+            // Cifrado de la contraseña
+            usuario.UsuContrasena = BCrypt.Net.BCrypt.HashPassword(usuario.UsuContrasena);
 
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
 
             // Enviar correo con credenciales
             string subject = "Credenciales de acceso";
-            string body = $"Hola {usuario.UsuPNombre},<br><br>Tu usuario es: {usuario.UsuId}<br>Tu contraseña es: {usuario.UsuContrasena}<br><br>Saludos.";
+            string body = $"Hola {usuario.UsuPNombre},<br><br>Tu usuario es: {usuario.UsuId}<br>Tu contraseña es: {contraseñaOriginal}<br><br>Saludos.";
 
             await _emailService.SendEmailAsync(usuario.UsuEmail, subject, body);
 
@@ -121,3 +153,4 @@ namespace BackendAE.Controllers
         }
     }
 }
+

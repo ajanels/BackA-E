@@ -157,10 +157,16 @@ namespace BackendAE.Migrations
                     b.Property<DateTime>("ProductoFecVencimiento")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("ProductoImg")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("ProductoNombre")
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<decimal>("ProductoPrecio")
+                        .HasColumnType("decimal(10, 2)");
 
                     b.Property<int>("ProductoStock")
                         .HasColumnType("int");
@@ -238,6 +244,9 @@ namespace BackendAE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RolId"));
 
+                    b.Property<bool>("Activo")
+                        .HasColumnType("bit");
+
                     b.Property<string>("RolNombre")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -292,8 +301,8 @@ namespace BackendAE.Migrations
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("UsuNit")
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasMaxLength(9)
+                        .HasColumnType("nvarchar(9)");
 
                     b.Property<string>("UsuPApellido")
                         .IsRequired()
@@ -328,6 +337,12 @@ namespace BackendAE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VentaId"));
 
+                    b.Property<int?>("ProductoCantidad")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ProductoId")
+                        .HasColumnType("int");
+
                     b.Property<string>("UsuId")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -341,18 +356,34 @@ namespace BackendAE.Migrations
 
                     b.HasKey("VentaId");
 
+                    b.HasIndex("ProductoId");
+
                     b.ToTable("Ventas");
                 });
 
             modelBuilder.Entity("BackendAE.Models.Producto", b =>
                 {
                     b.HasOne("BackendAE.Models.CategoriaProducto", "CategoriaProducto")
-                        .WithMany()
+                        .WithMany("Productos")
                         .HasForeignKey("CatProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("CategoriaProducto");
+                });
+
+            modelBuilder.Entity("BackendAE.Models.Venta", b =>
+                {
+                    b.HasOne("BackendAE.Models.Producto", "Producto")
+                        .WithMany()
+                        .HasForeignKey("ProductoId");
+
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("BackendAE.Models.CategoriaProducto", b =>
+                {
+                    b.Navigation("Productos");
                 });
 #pragma warning restore 612, 618
         }

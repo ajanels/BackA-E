@@ -10,12 +10,12 @@ namespace BackendAE.Models
 
         public int ProveedorId { get; set; }
 
-       // [ForeignKey("ProveedorId")]
+        // [ForeignKey("ProveedorId")]
         //public virtual Proveedor Proveedor { get; set; }
 
         public int ProductoId { get; set; }
 
-       // [ForeignKey("ProductoId")]
+        // [ForeignKey("ProductoId")]
         //public virtual Producto Producto { get; set; }
     }
 }

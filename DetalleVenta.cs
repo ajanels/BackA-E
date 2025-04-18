@@ -20,7 +20,7 @@ namespace BackendAE.Models
         [Required]
         public int VentaId { get; set; }
 
-       // [ForeignKey("VentaId")]
+        // [ForeignKey("VentaId")]
         //public virtual Venta? Venta { get; set; }
 
         [Required]

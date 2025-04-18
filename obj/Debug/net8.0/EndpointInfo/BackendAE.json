@@ -1809,6 +1809,9 @@
         "additionalProperties": false
       },
       "Rol": {
+        "required": [
+          "activo"
+        ],
         "type": "object",
         "properties": {
           "rolId": {
@@ -1819,6 +1822,9 @@
             "maxLength": 100,
             "type": "string",
             "nullable": true
+          },
+          "activo": {
+            "type": "boolean"
           }
         },
         "additionalProperties": false

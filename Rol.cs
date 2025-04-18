@@ -11,6 +11,9 @@ namespace BackendAE.Models
         [MaxLength(100)]
         public string RolNombre { get; set; }
 
+        [Required]
+        public bool Activo { get; set; } = true;
+
         //public virtual ICollection<Usuario>? Usuarios { get; set; }
     }
 }
