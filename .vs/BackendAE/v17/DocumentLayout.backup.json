@@ -1,5 +1,6 @@
 {
   "Version": 1,
+<<<<<<< HEAD
   "WorkspaceRootPath": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\",
   "Documents": [
     {
@@ -56,6 +57,28 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\chris\\desktop\\a\u0026eback\\backa-e\\dtos\\categoriaproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\usuario\\documents\\santos\\angular\\projectac\\backa-e\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|solutionrelative:producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\usuario\\documents\\santos\\angular\\projectac\\backa-e\\controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|solutionrelative:controllers\\productoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\usuario\\documents\\santos\\angular\\projectac\\backa-e\\controllers\\categoriaproductoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|solutionrelative:controllers\\categoriaproductoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\usuario\\documents\\santos\\angular\\projectac\\backa-e\\categoriaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|solutionrelative:categoriaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|c:\\users\\usuario\\documents\\santos\\angular\\projectac\\backa-e\\dtos\\categoriaproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
       "RelativeMoniker": "D:0:0:{010AE46D-4B84-42B8-8863-A648C436E07B}|BackendAE.csproj|solutionrelative:dtos\\categoriaproductodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -118,17 +141,38 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 2,
+=======
+          "SelectedChildIndex": 4,
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+<<<<<<< HEAD
               "Title": "Rol.cs",
               "DocumentMoniker": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\Rol.cs",
               "RelativeDocumentMoniker": "Rol.cs",
               "ToolTip": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\Rol.cs",
               "RelativeToolTip": "Rol.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwBMAAAAAAAAAAAAAAA==",
+=======
+              "Title": "CategoriaProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Controllers\\CategoriaProductosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriaProductosController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Controllers\\CategoriaProductosController.cs",
+              "RelativeToolTip": "Controllers\\CategoriaProductosController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwDkAAAATAAAAAAAAAA==",
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-16T02:54:45.791Z",
               "EditorCaption": ""
@@ -162,12 +206,21 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
+<<<<<<< HEAD
               "Title": "ProveedorProducto.cs",
               "DocumentMoniker": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\ProveedorProducto.cs",
               "RelativeDocumentMoniker": "ProveedorProducto.cs",
               "ToolTip": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\ProveedorProducto.cs*",
               "RelativeToolTip": "ProveedorProducto.cs*",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+=======
+              "Title": "CategoriaProducto.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\CategoriaProducto.cs",
+              "RelativeDocumentMoniker": "CategoriaProducto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\CategoriaProducto.cs",
+              "RelativeToolTip": "CategoriaProducto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwAoAAAAuAAAAAAAAAA==",
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:14:50.215Z",
               "EditorCaption": ""
@@ -228,9 +281,15 @@
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Producto.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\Producto.cs",
               "RelativeDocumentMoniker": "Producto.cs",
               "ToolTip": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\Producto.cs",
+=======
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Producto.cs",
+              "RelativeDocumentMoniker": "Producto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Producto.cs",
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
               "RelativeToolTip": "Producto.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAowCYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -239,6 +298,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< HEAD
               "DocumentIndex": 9,
               "Title": "DetalleVenta.cs",
               "DocumentMoniker": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\DetalleVenta.cs",
@@ -249,6 +309,17 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-18T03:14:06.739Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 1,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "Controllers\\ProductosController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAowEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T04:34:33.55Z"
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
             },
             {
               "$type": "Document",
@@ -293,6 +364,7 @@
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "CategoriaProductoDto.cs",
+<<<<<<< HEAD
               "DocumentMoniker": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\Dtos\\CategoriaProductoDto.cs",
               "RelativeDocumentMoniker": "Dtos\\CategoriaProductoDto.cs",
               "ToolTip": "C:\\Users\\chris\\Desktop\\A\u0026EBAck\\BackA-E\\Dtos\\CategoriaProductoDto.cs*",
@@ -470,6 +542,15 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T09:36:40.408Z",
               "EditorCaption": ""
+=======
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Dtos\\CategoriaProductoDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\CategoriaProductoDto.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\SANTOS\\Angular\\ProjectAC\\BackA-E\\Dtos\\CategoriaProductoDto.cs",
+              "RelativeToolTip": "Dtos\\CategoriaProductoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-11T19:34:43.579Z"
+>>>>>>> 87c5e69527dd3e7546f2d6faac5cce19af7d91b0
             }
           ]
         }
