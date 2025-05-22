@@ -4,6 +4,7 @@ using BackendAE.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BackendAE.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250321052037_RenameUsuContraseñaToUsuContrasena")]
+    partial class RenameUsuContraseñaToUsuContrasena
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -259,7 +262,8 @@ namespace BackendAE.Migrations
 
                     b.Property<string>("UsuContrasena")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("UsuCui")
                         .IsRequired()
@@ -273,12 +277,12 @@ namespace BackendAE.Migrations
 
                     b.Property<string>("UsuEmail")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("UsuEstado")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(1)");
 
                     b.Property<DateTime>("UsuFecIngreso")
                         .HasColumnType("datetime2");
@@ -288,8 +292,7 @@ namespace BackendAE.Migrations
 
                     b.Property<string>("UsuGenero")
                         .IsRequired()
-                        .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)");
+                        .HasColumnType("nvarchar(1)");
 
                     b.Property<string>("UsuNit")
                         .HasMaxLength(10)

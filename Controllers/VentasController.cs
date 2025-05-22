@@ -67,7 +67,7 @@ namespace BackendAE.Controllers
                 ProductoId = dto.ProductoId,
                 UsuId = dto.UsuId,
                 ProductoCantidad = dto.ProductoCantidad,
-                VentaTotal = dto.VentaTotal,
+                VentaTotal = dto.ProductoCantidad * producto.ProductoPrecio,
                 VentaFecha = DateTime.Now,
                 Descripcion = dto.Descripcion
             };
@@ -146,10 +146,20 @@ namespace BackendAE.Controllers
             using var document = new PdfDocument();
             var page = document.AddPage();
             var gfx = XGraphics.FromPdfPage(page);
+
+            // Logo
+            var logoPath = Path.Combine(Directory.GetCurrentDirectory(), "Resources", "logo.png");
+            if (System.IO.File.Exists(logoPath))
+            {
+                using var imageStream = new FileStream(logoPath, FileMode.Open, FileAccess.Read);
+                var image = XImage.FromStream(() => imageStream);
+                gfx.DrawImage(image, 40, 20, 100, 100); // Posición (x, y) y tamaño
+            }
+
             var fontTitle = new XFont("Arial", 20, XFontStyle.Bold);
             var fontText = new XFont("Arial", 12, XFontStyle.Regular);
 
-            double yPoint = 40;
+            double yPoint = 130;
 
             gfx.DrawString("A&E LIBRERÍA FACTURA ELECTRÓNICA", fontTitle, XBrushes.Black, new XRect(0, yPoint, page.Width, 30), XStringFormats.TopCenter);
             yPoint += 50;
@@ -271,9 +281,5 @@ namespace BackendAE.Controllers
 
             return Ok(data);
         }
-
-
-
-
     }
 }

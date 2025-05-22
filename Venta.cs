@@ -24,7 +24,7 @@ namespace BackendAE.Models
 
         [ForeignKey("ProductoId")]
         public virtual Producto? Producto { get; set; }
-
+        
         [Required]
         public string? Descripcion { get; set; }
 
