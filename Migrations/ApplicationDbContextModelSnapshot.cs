@@ -337,6 +337,10 @@ namespace BackendAE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("VentaId"));
 
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int?>("ProductoCantidad")
                         .HasColumnType("int");
 
@@ -345,7 +349,7 @@ namespace BackendAE.Migrations
 
                     b.Property<string>("UsuId")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(20)");
 
                     b.Property<DateTime>("VentaFecha")
                         .HasColumnType("datetime2");
@@ -357,6 +361,8 @@ namespace BackendAE.Migrations
                     b.HasKey("VentaId");
 
                     b.HasIndex("ProductoId");
+
+                    b.HasIndex("UsuId");
 
                     b.ToTable("Ventas");
                 });
@@ -378,7 +384,15 @@ namespace BackendAE.Migrations
                         .WithMany()
                         .HasForeignKey("ProductoId");
 
+                    b.HasOne("BackendAE.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Producto");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("BackendAE.Models.CategoriaProducto", b =>
